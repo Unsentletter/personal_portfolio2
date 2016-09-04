@@ -1,0 +1,97 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+<div id="container">
+  <div id="group1">
+    <div class="background">
+      <div id="header_text">
+          <div class="head">
+            <h1>TRISTAN SOUTHWELL</h1>
+            <h2>Full Stack web developer and extraordinary human being</h2>
+          </div>
+      </div>
+    </div>
+
+    <div class="foreground">
+      <div id="portfolio">
+          <div class="middle">
+              <h1>COOL STUFF I HAVE DONE</h1>
+          </div>
+          <div class="row">
+              <% 4.times do %>
+                  <div class="thumbnail">
+                      <img src="http://placehold.it/242x200/333333/999999" class="img-responsive center-block" alt="placeholder">
+                  </div>
+              <% end %>
+          </div>
+      </div>
+
+<footer class="footer">
+  <div class="aboutmecolor">
+    <div class="row">
+      <!-- <div class="picme"> -->
+      <div class="col-md-6 picme">
+          <img src='http://res.cloudinary.com/ddpizrmrj/image/upload/v1472795072/FullSizeRender_copy_lnyney.png'>
+      </div>
+      <!-- </div> -->
+
+    <div class="row" style="">
+      
+        <div class="aboutme">
+          <div class="col-md-6">
+            <h1>I am Tristan Southwell<h1>
+            <h3>Probably the best web developer I know<h3>
+            <p>Splitting my time between Sydney and Wollongong NSW.  I get the best of both worlds.  The buzz and the opportunity of the city, and the quiet and relaxation of the country.<br>
+              In my spare time I enjoy the great outdoors.  I scuba dive, spearfish, bush walk, and kayak.
+              Discovering code was a huge discovery in my life.  My high school woodwork teacher used to call me ‘Lightening’ because I could not hammer in a  nail.  With code I have found something that allows me to build and create without having to pick up a hammer or a nail.
+              <br>In my previous life I was an Accounting and Finance professional.  I have left that life behind and am now a Full Stack web developer.  I specialise in Ruby on Rails, Node.js,  Angular.js, and React.js and I want to build things for you.
+            </p>
+
+          </div>
+        </div>
+    </div>
+  </div>
+    <div class="footercolor">
+      <div class="row" style="height: 300px;">
+      <div class="bottom">
+        <div class="bottomfont">
+          <div class="col-md-6">
+            <p>
+              If you like what I do, have something you would like me to work on, or just want to say hi send me an email.  Dont be shy.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>Feel free to contact me, or check out me and my work via the links below</p>
+        </div>
+          <p>
+          <div class="social">
+            <ul>
+              <li>
+                <a href='https://github.com/Unsentletter'>
+                <i class="fa fa-lg fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href='https://www.linkedin.com/in/tristan-southwell-716681a3?trk=nav_responsive_tab_profile'>
+                <i class="fa fa-lg fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a>
+                <%= link_to new_enquiry_path do %>
+                <i class="fa fa-lg fa-envelope"></i>
+                <%end%>
+                </a>
+              </li>
+              <li>
+                <%=link_to 'tristan@tristansouthwell.com',new_enquiry_path%>
+              </li>
+            </ul>
+          </div>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+</div>

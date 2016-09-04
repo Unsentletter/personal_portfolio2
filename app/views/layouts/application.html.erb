@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio2</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Tristan Southwell's Portfolio">
+    <meta name="author" content ="Tristan Southwell">
+    <meta name="keyword" content ="Full-Stack Web Developer">
+    <!-- <meta http-equiv="refresh" content ="120"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- facebook metas -->
+    <meta property="og:url" content="http://tristansouthwell.com">
+    <meta property="og:image" content="{{imageUrl}}">
+    <meta property="og:description" content="Full-Stack Web Developer">
+    <meta property="og:title" content="Tristan Southwell's Portfolio">
+    <meta property="og:site_name" content="Tristan Southwell's Portfolio">
+<!-- twitter metas -->
+    <meta name="twitter:card" content="Tristan Southwell's Portfolio">
+    <meta name="twitter:url" content="http://tristansouthwell.com">
+    <meta name="twitter:title" content="Tristan Southwell's Portfolio">
+    <meta name="twitter:description" content="Full-Stack Web Developer">
+    <meta name="twitter:image" content="{{imageUrl}}">
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+  </body>
+</html>

@@ -1,0 +1,138 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+ *, html, body {
+  padding: 0;
+  margin: 0;
+  border: 0 none;
+  outline: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
+  max-width: 100%;
+ }
+
+ // * {
+ //   border-style: solid;
+ //   border-width: 1px;
+ //   border-color: red;
+ // }
+
+#header_text h1 {
+  font-size: 8vw;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#header_text h2 {
+  font-size: 3vw;
+}
+
+#header_text {
+  // putting text on top of image
+  background: url("http://res.cloudinary.com/ddpizrmrj/image/upload/v1472685412/underwater_wvkcq4.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  font-family: 'Montserrat', sans-serif;
+  // forcing text to one line
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// forcing text to center of div
+.head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.aboutme {
+  height: 100vh;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 10px;
+}
+
+.aboutmecolor {
+  background-color: #C2F1FB;
+}
+
+.middle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.middle h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+}
+
+.bottom {
+  width: 100%;
+  padding: 0;
+  background-color: black;
+}
+
+.bottomfont p {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.aboutme h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme p {
+  font-size: 20px;
+  line-height: 120%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bottom {
+  color: #909AA0;
+}
+
+.footercolor {
+  padding-top: 15px;
+  background-color: black;
+}
+
+.imageme {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.row {
+  margin-left: 0;
+}
+
+.picme {
+  padding-left: 0;
+  padding-right: 0;
+}
